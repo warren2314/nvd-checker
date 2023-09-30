@@ -37,7 +37,7 @@ while True:
 
     # Send a GET request to the NVD API
     response = requests.get(url, headers=headers, params=params)
-    print(response.text)
+    print(response.text) # This is to check if the API loaded values
 
     # Check if the request was successful
     if response.status_code == 200:
